@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#navbar{
+    padding: 5px;
+    display: flex;
+    background-color: black;
+    color: yellow;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#songsBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.playSong{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+}
+
+.playSong:hover{
+    width: 90%;
+    padding: 10px;
+    font-family: 16px;
+}
+
+.fa-pause, .fa-play{
+    padding-right: 10px;
+    float: right;
+}
+ 
+@media only screen and (max-width: 577px) {
+    #songsBox{
+        width: 80%;
+    }
+
+    .playSong{
+        font-size: 16px;
+    }    
+}
